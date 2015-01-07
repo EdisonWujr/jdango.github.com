@@ -40,4 +40,10 @@ single: true
     {% include_array default_asides %}
   {% endif %}
 </aside>
+£û% if site.duoshuo_short_name and site.duoshuo_comments == true and page.comments == true %£ý
+  <section>
+    <h1>Comments</h1>
+    <div id="comments" aria-live="polite">£û% include post/duoshuo1.html %£ý</div>
+  </section>
+£û% endif %£ý
 {% endunless %}
